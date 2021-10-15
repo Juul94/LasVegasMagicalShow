@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Page.master.cs" Inherits="LasVegasMagicalShow.Page" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Las Vegas Magical Show</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+
+<body id="body" runat="server">
+
+    <form id="form" runat="server">
+
+        <nav class="navbar navbar-expand-sm bg-dark">
+
+            <a class="nav-link">
+                <h4 class="white noMargin">Las Vegas Magical Show</h4>
+            </a>
+  
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item" id="nav_home" runat="server">
+                    <asp:Button ID="Button_Home" runat="server" Text="Home" OnClick="Button_Home_Click" />
+                </li>
+
+                <li class="nav-item" id="nav_register" runat="server">
+                    <asp:Button ID="Button_Register" runat="server" Text="Register"  OnClick="Button_Register_Click"/>
+                </li>
+
+                <li class="nav-item" id="nav_login" runat="server">
+                    <asp:Button ID="Button_Login" runat="server" Text="Login" OnClick="Button_Login_Click"/>
+                </li>
+
+                <li class="nav-item" id="nav_profile" runat="server" visible="false">
+                    <asp:Button ID="Button_Profile" runat="server" Text="Profile" OnClick="Button_Profile_Click"/>
+                </li>
+
+                <li class="nav-item" id="nav_logout" runat="server" visible="false">
+                    <asp:Button ID="Button_SignOut" runat="server" Text="Sign Out" OnClick="Button_SignOut_Click" />
+                </li>
+            </ul>
+
+        </nav>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
